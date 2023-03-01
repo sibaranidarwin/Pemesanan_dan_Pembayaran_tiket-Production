@@ -1111,18 +1111,11 @@ testimonials
 --------------------------------------------
 */
 #testimonials {
-  margin-top: 120px;
-  padding: 80px 0px;
   padding: 120px 0px;
-  background-image: url(../images/dotted-map-bg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #testimonials .section-heading {
   text-align: center;
   color: #fff;
-  margin-bottom: 60px;
 }
 
 #testimonials .item {
@@ -1137,7 +1130,6 @@ testimonials
   color: #fff;
   letter-spacing: 1px;
   margin-top: 22px;
-  margin-bottom: 7px;
 }
 
 
@@ -1334,7 +1326,7 @@ footer
 
 footer {
   padding: 80px 0px;
-  background: rgb(51,155,158);
+  background: #339b9e;
   background: linear-gradient(145deg, rgba(51,155,158,1) 0%, rgba(104,204,152,1) 100%);
 }
 
@@ -1603,7 +1595,7 @@ portfolio
   color: #5fb759;
 }
 #projects .filters-content {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 #projects .filters-content .show {
   opacity: 1;

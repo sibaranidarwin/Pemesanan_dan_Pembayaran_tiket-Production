@@ -25,7 +25,7 @@
             <div class="col-lg-12">
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <a href="{{url('/admin/TambahGaleri')}}" class="btn btn-success">Tambah Galeri</a>
+                  <a href="{{url('/admin/TambahGaleri')}}" class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Tambah Galeri</a>
                 </div>
                 <div class="table-responsive p-3">
                   <table class="table align-items-center table-flush table-hover" id="dataTableHover">

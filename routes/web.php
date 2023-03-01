@@ -50,9 +50,10 @@ Route::get('/CetakTiket{id_pemesanan}','TiketController@cetakTiket');
 
 
 // --------------Admin-------------------//
-Route::get('/admin/DashboardAdmin', function () {
-    return view('Admin.halaman.DashboardAdmin');
-});
+Route::get('/admin/DashboardAdmin', 'LoginAdminController@dashboard');
+//  function () {
+//     // return view('Admin.halaman.DashboardAdmin');
+// });
 
 Route::get('/admin/LoginAdmin','LoginAdminController@login');
 Route::post('/admin/LoginPost','LoginAdminController@postLogin');

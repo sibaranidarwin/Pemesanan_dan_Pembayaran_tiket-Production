@@ -25,6 +25,10 @@ class LoginAdminController extends Controller
         }
     }
 
+    public function dashboard()  {
+        return view ('Admin.halaman.DashboardAdmin');
+    }
+
     public function postLogin(Request $request){
 
         $email = $request->email;
@@ -40,7 +44,7 @@ class LoginAdminController extends Controller
                 Session::put('email',$data->email);
                 
                 Session::put('LoginAdmin',TRUE);
-                return redirect('/admin/MengelolaPemesanan');
+                return redirect('/admin/DashboardAdmin');
             }
             else{
                 return redirect('admin/LoginAdmin')->with('alert','Password atau Email, Salah !');

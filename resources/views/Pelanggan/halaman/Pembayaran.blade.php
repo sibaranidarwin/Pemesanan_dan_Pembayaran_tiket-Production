@@ -11,7 +11,7 @@ data-client-key="SB-Mid-client-L0-rOGFhytJ9zCND"></script>
     
 
         <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="subscribe">
+    {{-- <section class="section" id="subscribe">
         <div class="container header-text" id="top">
             <hr>
             <br>
@@ -42,7 +42,7 @@ data-client-key="SB-Mid-client-L0-rOGFhytJ9zCND"></script>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- ***** Features Big Item End ***** -->
 
     <!-- ***** About Area Starts ***** -->
@@ -57,7 +57,7 @@ data-client-key="SB-Mid-client-L0-rOGFhytJ9zCND"></script>
                 </div>
             @endif
             <div class="row">
-                <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                <div class="form-group col-lg-6 col-md-6 col-xs-12 card">
                     <table width="400px" height="150px">
                         <tr>
                             <td>Id Pemesanan</td>

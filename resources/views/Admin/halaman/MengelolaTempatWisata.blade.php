@@ -3,7 +3,7 @@
 <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Data Tempat Wisata</h1>
+            <h1 class="h3 mb-0 text-gray-800">Tambah Tiket Wisata</h1>
             <ol class="breadcrumb">  
               <li class="breadcrumb-item"><a href="">Dashboard</a></li>
               <li class="breadcrumb-item active" aria-current="page">Data Wisata</li>
@@ -25,15 +25,16 @@
             <div class="col-lg-12">
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <a href="{{url('/admin/TambahTempatWisata')}}" class="btn btn-success">Tambah wisata</a>
+                  <a href="{{url('/admin/TambahTempatWisata')}}" class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Tambah Tiket Wisata</a>
                 </div>
                 <div class="table-responsive p-3">
                   <table class="table align-items-center table-flush table-hover" id="dataTableHover">
                     <thead class="thead-light">
                       <tr>
                         <th>No</th>
-                        <th>Foto Utama</th>
-                        <th>Nama Wisata</th>
+                        <th>Foto</th>
+                        <th>Nama Tiket</th>
+                        <th>Kategori Tiket</th>
                         <th>Harga</th>
                         <th>Maksimal Tiket</th>
                         <th>Alamat</th>
@@ -52,6 +53,7 @@
                             <img width="150px" src="{{ url('pelanggan/assets/images/fotowisata/'.$tampil->foto) }}">
                         </td>
                         <td>{{$tampil->nama_wisata}}</td>
+                        <td></td>
                         <td>
                           @rupiah($tampil->harga)
                         </td>

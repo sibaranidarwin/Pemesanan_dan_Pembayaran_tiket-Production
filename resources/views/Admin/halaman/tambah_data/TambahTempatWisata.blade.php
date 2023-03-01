@@ -3,7 +3,7 @@
       <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Tambah Data Tempat Wisata</h1>
+            {{-- <h1 class="h3 mb-0 text-gray-800">Tambah Tiket Wisata</h1> --}}
             <ol class="breadcrumb">  
               <li class="breadcrumb-item"><a href="{{url ('/admin/DashboardAdmin')}}">Dashboard</a></li>
               <li class="breadcrumb-item"><a href="{{url ('/admin/MengelolaTempatWisata')}}">Data Wisata</a></li>
@@ -17,7 +17,7 @@
               <!-- Form Basic -->
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Tambah Data Tempat Wisata</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">&nbsp; Tambah Tiket Wisata</h6>
                 </div>
                 <div class="card-body">
 
@@ -41,6 +41,21 @@
 
                     @if ($errors->has('harga'))
                         <span class="text-danger"><p class="text-right">* {{ $errors->first('harga') }}</p></span>
+                    @endif
+
+                    </div>
+
+                    <div class="form-group">
+                      <label><b>Kategori Tiket Wisata</b></label>
+                      <select name = "kategori" class="form-control">
+                        <option value="">Pilih Kategori Tiket Wisata</option>
+                         <option value="Tiket">Tiket</option>
+                         <option value="Hotel">Hotel</option>
+                         <option value="Event">Event</option>
+                      </select>
+
+                    @if ($errors->has('kategori'))
+                        <span class="text-danger"><p class="text-right">* {{ $errors->first('kategori') }}</p></span>
                     @endif
 
                     </div>
@@ -78,7 +93,7 @@
                     </div>
                     
                     <div class="form-group"> 
-                        <input type="reset" class="btn btn-secondary"  value="Batal">
+                        <input type="reset" class="btn btn-secondary"  value="Reset">
                         <input type="submit" class="btn btn-primary" value="Simpan">
                     </div>
                 </form>

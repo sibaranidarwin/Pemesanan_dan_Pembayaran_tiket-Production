@@ -10,6 +10,7 @@ class ModelTempatWisata extends Model
     protected $primaryKey   = 'id';  //primary key
     protected $fillable      = ['nama_wisata', 
     							'foto',
+                                'kategori',
     							'alamat',
                                 'maks_tiket']; //field tabel
 

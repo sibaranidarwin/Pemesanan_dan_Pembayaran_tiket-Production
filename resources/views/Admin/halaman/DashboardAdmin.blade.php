@@ -36,7 +36,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-uppercase mb-1 text-gray-800">Data Users</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{count($user)}}</div>
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-users fa-2x text-info"></i>
@@ -55,7 +55,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-uppercase mb-1 text-gray-800">Data Admin</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{count($admin)}}</div>
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                       <i class="far fa-user fa-2x text-info"></i>
@@ -87,7 +87,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-uppercase mb-1 text-gray-800">Data Gedung</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{count($gedung)}}</div>
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-table fa-2x text-info"></i>
@@ -106,7 +106,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-uppercase mb-1 text-gray-800">Data Fasilitas</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{count($fasilitas)}}</div>
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-list fa-2x text-warning"></i>
@@ -136,7 +136,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-uppercase mb-1 text-gray-800">Data Penyewaan</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{count($penyewaan)}}</div>
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-clipboard-list fa-2x text-info"></i>
@@ -155,7 +155,7 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-uppercase mb-1 text-gray-800">Data Pembayaran</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{count($pembayaran)}}</div>
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-donate fa-2x text-info"></i>
