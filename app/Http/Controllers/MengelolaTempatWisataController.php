@@ -49,6 +49,7 @@ class MengelolaTempatWisataController extends Controller
 
     	$this->validate($request, [
     		'nama_wisata' => 'required|max:50|unique:tempat_wisata',
+    		'kategori' => 'required',
     		'alamat' => 'required|max:255',
     		'maks_tiket' => 'required|numeric|min:0|digits_between:0,5',
             'harga' => 'required|numeric|min:0|digits_between:0,15',
@@ -65,6 +66,7 @@ class MengelolaTempatWisataController extends Controller
         $data->alamat = $request->alamat;
         $data->maks_tiket = $request->maks_tiket;
         $data->harga = $request->harga;        
+        $data->kategori = $request->kategori;        
         $data->foto = $nama_file;
 
     	$data->save();

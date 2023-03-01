@@ -1,4 +1,4 @@
-@extends('Pelanggan.layout.TampilanPelanggan')
+{{-- @extends('Pelanggan.layout.TampilanPelanggan')
 @section('content')
 
 <!-- content -->
@@ -93,4 +93,88 @@
 
 <!-- content -->
 
-@endsection
+@endsection --}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ asset('pelanggan/assets/css/login.css') }}">
+
+    <title>Register</title>
+
+</head>
+<body>
+   <div class="box">
+    <div class="container">
+
+        <div class="top">
+            <header>  
+                <a href="{{ url('/') }}">
+                <img src="{{ asset('pelanggan/assets/images/galeri/Logo_Kaldera.png') }}" alt="">
+                </a>
+        </header>
+        <span>Registration</span>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-xs-12">
+            <form enctype="multipart/form-data" class="" action="{{url('/AksiRegister')}}" method="post">
+
+                {{csrf_field()}}
+
+                <div class="input-field">
+                    <input type="text" class="input" name="nama_pelanggan" placeholder="Masukkan Nama Pelanggan">
+                    <i class='bx bx-user' ></i>
+                    @if ($errors->has('nama_pelanggan'))
+                    <span class="text-danger"><p class="text-right">* {{ $errors->first('nama_pelanggan') }}</p></span>
+                    @endif
+                </div>
+
+                <div class="input-field">
+                    <input type="text" class="input" name="no_hp" placeholder="Masukkan Nomor Hp Pelanggan">
+                    <i class='bx bx-user' ></i>
+                    @if ($errors->has('no_hp'))
+                    <span class="text-danger"><p class="text-right">* {{ $errors->first('no_hp') }}</p></span>
+                    @endif
+                </div>
+
+                <div class="input-field">
+                    <input type="text" class="input" name="email" placeholder="Masukkan Email Pelanggan">
+                    <i class='bx bx-mail-send' ></i>
+                    @if ($errors->has('email'))
+                    <span class="text-danger"><p class="text-right">* {{ $errors->first('email') }}</p></span>
+                    @endif
+                </div>
+
+                <div class="input-field">
+                    <input type="password" class="input" name="password" placeholder="Masukkan Password Pelanggan">
+                    <i class='bx bx-lock-alt' ></i>
+                    @if ($errors->has('password'))
+                    <span class="text-danger"><p class="text-right">* {{ $errors->first('password') }}</p></span>
+                    @endif
+                </div>
+                
+               
+                <div class="input-field">
+                    <input type="submit" class="submit" value="Register" id="">
+                </div>
+
+            </form>
+        </div>
+        <div class="two-col">
+            <div class="one">
+               <input type="checkbox" name="" id="check">
+               <label for="check"> Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="{{url('/Login')}}">Silahkan login!</a></label>
+            </div>
+        </div>
+    </div>
+</div>  
+</body>
+</html>

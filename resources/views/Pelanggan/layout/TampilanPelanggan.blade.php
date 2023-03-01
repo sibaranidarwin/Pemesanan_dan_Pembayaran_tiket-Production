@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('pelanggan/assets/css/owl-carousel.css') }}">
 
     <link rel="stylesheet" href="{{ asset('pelanggan/assets/css/lightbox.css') }}">
+    <link rel="stylesheet" href="{{ asset('pelanggan/assets/css/footer.css') }}">
 
     </head>
     

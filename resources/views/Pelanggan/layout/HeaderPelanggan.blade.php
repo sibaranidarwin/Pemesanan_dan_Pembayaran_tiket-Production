@@ -19,15 +19,15 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            Tiket.Kaldera
+                        <a href="" class="logo">
+                            <img src="{{ asset('pelanggan/assets/images/galeri/Logo_Kaldera.png') }}" alt="" style="width: 65%;">
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="{{ url('/') }}" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="{{ url('/#testimonials') }}">Pemesanan</a></li>
-                            <li class="scroll-to-section"><a href="{{ url('/Pembayaran') }}">Pembayaran</a></li>
+                            {{-- <li class="scroll-to-section"><a href="{{ url('/Pembayaran') }}">Pembayaran</a></li> --}}
                             <li class="scroll-to-section"><a href="{{ url('/Tiket') }}">Tiket</a></li>
                             <hr />
                             @if (Session::get('loginPelanggan') == True)
@@ -43,11 +43,9 @@
                                 </li>   
                             @else
                                 <li class="scroll-to-section">
-                                    <a href="{{ url('/Login') }}">&emsp;&emsp;&emsp;&emsp; Masuk</a>
+                                    <a href="{{ url('/Login') }}">&emsp;&emsp;&emsp;&emsp; Masuk &nbsp;&nbsp;&nbsp;</a>
                                 </li>
-                                {{-- <li class="scroll-to-section">
-                                    <a href="{{ url('/Register') }}">&nbsp; Buat Akun &nbsp;</a>
-                                </li> --}}
+                                    <a class="btn btn-success " href="{{ url('/Register') }}">&nbsp; Daftar &nbsp;</a>
                             @endif
                            
                         </ul>        

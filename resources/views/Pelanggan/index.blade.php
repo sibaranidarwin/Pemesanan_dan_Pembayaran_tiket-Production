@@ -100,7 +100,7 @@
                 <img src="pelanggan/assets/images/slide-01.jpg" alt="">
                 <div class="text-content">
                   <h3>Selamat Datang di Wisata Indonesia</h3>
-                  <h5>Pemesanan Tiket Online</h5>
+                  <h5>Pemesanan Tiket Online Wisata Kaldera Toba Nomadic Escape</h5>
                   <a href="#" class="main-stroked-button">Lihat Wisata</a>
                   <a href="#" class="main-filled-button">Pesan Tiket</a>
                 </div>

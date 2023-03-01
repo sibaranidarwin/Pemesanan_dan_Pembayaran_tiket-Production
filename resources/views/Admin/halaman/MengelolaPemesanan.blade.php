@@ -33,7 +33,7 @@
                                                 <th>Nama Pelanggan</th>
                                                 <th>Status Pemesanan</th>
                                                 <th>Pilih Opsi</th>
-                                                <th></th>
+                                                <th>Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>

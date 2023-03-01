@@ -3,7 +3,7 @@
 
 <!-- content -->
     
-        <!-- ***** Features Big Item Start ***** -->
+        {{-- <!-- ***** Features Big Item Start ***** -->
     <section class="section" id="subscribe">
         <div class="container header-text" id="top">
             <hr>
@@ -17,20 +17,19 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- ***** Features Big Item End ***** -->
 
     <!-- ***** About Area Starts ***** -->
     <section class="section" id="about">
-        <div class="container">
-            <div class="row">
+        <div class="container card">
+            <div class="row mt-5">
                 <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div class="block-team-member-1 text-left rounded" style="border: 5px solid grey; width: 400px;">
-                        <center><h2>{{$wisata->nama_wisata}}</h2><hr>
+                    <div class="block-team-member-1 text-left rounded" style="border: 0px solid grey; width: 400px;">
+                        <h5><b>{{$wisata->nama_wisata}}</b></h5>
                             <p class="px-3 mb-4 mt-3">
-                                <img width="350px" src="{{ url('pelanggan/assets/images/fotowisata/'.$wisata->foto) }}">
+                                <img width="120%" src="{{ url('pelanggan/assets/images/fotowisata/'.$wisata->foto) }}">
                             </p>
-                        </center>
                     </div>
                 </div>
 
@@ -39,8 +38,8 @@
 
                     {{csrf_field()}}
 
-                    <label><strong>Id Pemesanan : </strong></label>
-                        <input type="text" name="id" class="form-control" placeholder="Id Pemesanan" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Id Pemesanan'" value=" S-{{ rand() }}" readonly>
+                    <label hidden><strong>Id Pemesanan : </strong></label>
+                        <input hidden type="text" name="id" class="form-control" placeholder="Id Pemesanan" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Id Pemesanan'" value=" S-{{ rand() }}" readonly>
 
                     <input type="text" name="id_wisata" value="{{$wisata->id}}" hidden>
                     
@@ -76,7 +75,7 @@
                           <span class="text-danger"><p class="text-right">* {{$errors->first('jumlah_tiket') }}</p></span>
                         @endif
                     <br><hr>
-                    <input type="submit" style="color: black" class="btn btn-warning" value="Pesan">
+                    <input type="submit" style="color: #fff" class="btn btn-success" value="Pesan">
                     </form>
                 </div>
 
